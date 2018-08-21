@@ -15,7 +15,7 @@
 # Java官方库新特性
 - [x] Optional
 - [x] Streams
-- [ ] Date／Time API（JSR-310）
+- [x] Date／Time API（JSR-310）
 - [ ] Nashorn JavaScript引擎
 - [ ] Base64
 - [ ] 并行数组
