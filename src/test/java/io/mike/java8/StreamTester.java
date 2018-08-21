@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.junit.Test;
 
@@ -23,6 +25,20 @@ import org.junit.Test;
  */
 public class StreamTester {
 
+	@Test
+	public void test_iterate() {
+		int batchMax = 3;
+		List<Integer> list = new ArrayList<>();
+		for (int j = 0; j < 10; j++) {
+			list.add(j);
+		}
+        Stream.iterate(0, i -> i + 1).limit(batchMax).parallel().forEach(i -> {
+        	System.out.println(i);
+        	List<Integer> eachFoot = list.stream().skip(i * batchMax).limit(batchMax).collect(Collectors.toList());
+        	System.err.println(eachFoot);
+        });
+	}
+	
 	@Test
 	public void test_one() {
 		List<Map<String, String>> list = new ArrayList<>();

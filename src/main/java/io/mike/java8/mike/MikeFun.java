@@ -1,4 +1,4 @@
-package io.mike.java8;
+package io.mike.java8.mike;
 
 @FunctionalInterface
 public interface MikeFun {

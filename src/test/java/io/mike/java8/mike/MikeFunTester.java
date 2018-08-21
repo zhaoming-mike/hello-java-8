@@ -1,5 +1,5 @@
 
-package io.mike.java8;
+package io.mike.java8.mike;
 
 import org.junit.Test;
 
