@@ -3,8 +3,8 @@
 
 # Java语言新特性
 - [x] Lambda 表达式和函数式接口
-- [ ] 接口的默认方法和静态方法
-- [ ] 方法引用
+- [x] 接口的默认方法和静态方法
+- [x] 方法引用
 - [ ] 重复注解
 - [ ] 更好的类型推断
 - [ ] 拓宽注解的应用场景
@@ -13,8 +13,8 @@
 - [ ] 参数名称
 
 # Java官方库新特性
-- [ ] Optional
-- [ ] Streams
+- [x] Optional
+- [x] Streams
 - [ ] Date／Time API（JSR-310）
 - [ ] Nashorn JavaScript引擎
 - [ ] Base64
