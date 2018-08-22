@@ -10,9 +10,14 @@ package io.mike.java8;
 
 import java.util.ArrayList;
 import java.util.List;
+import static java.util.Optional.*;
 import java.util.Optional;
 
+import static org.apache.commons.lang3.builder.ToStringBuilder.*;
 import org.junit.Test;
+
+import static io.mike.Mike.*;
+import io.mike.Mike;
 
 /**
  * @author zhaoming
@@ -21,6 +26,25 @@ import org.junit.Test;
  */
 public class OptionalTester {
 
+	@Test
+	public void test_mike() {
+		Mike mike = null;
+		Mike a = new Mike("A");
+		Mike b = new Mike("B");
+		Mike c = new Mike("C");
+//		c = null;
+		b.setMike(c);
+//		b = null;
+		a.setMike(b);
+		mike = a;
+		//可以方便的使用 Optional chaining 进行链式调用
+		System.out.println(reflectionToString(
+				ofNullable(mike)
+				.map(e -> e.getMike())	//b
+				.map(e -> e.getMike())	//c
+				.orElse(DEFAULT_MIKE)));
+	}
+	
 	@Test
 	public void test() {
 		List<Integer> list = new ArrayList<>();
