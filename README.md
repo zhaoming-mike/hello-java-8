@@ -17,7 +17,7 @@
 - [x] Streams
 - [x] Date／Time API（JSR-310）
 - [ ] Nashorn JavaScript引擎
-- [ ] Base64
+- [x] Base64
 - [ ] 并行数组
 - [ ] 并发性
 
