@@ -17,7 +17,7 @@
 - [x] Streams
 - [x] Date／Time API（JSR-310）
 - [ ] Nashorn JavaScript引擎
-- [x] Base64
+- [x] [Base64](./blob/master/src/test/java/io/mike/java8/Base64Tester.java)
 - [ ] 并行数组
 - [ ] 并发性
 
