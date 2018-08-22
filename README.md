@@ -26,4 +26,4 @@
 - [ ] 类依赖分析器：jdeps
 
 # JVM的新特性
-- [ ] 使用 `Metaspace` (JEP-122) 替代永久代 `PermGen` 
+- [ ] 使用 `Metaspace` ([JEP-122](http://openjdk.java.net/jeps/122)) 替代永久代 `PermGen` 
